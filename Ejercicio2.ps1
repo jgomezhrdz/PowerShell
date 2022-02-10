@@ -1,0 +1,1 @@
+Get-ChildItem *.jpg | Rename-Item -NewName { $(Get-Date -Format "yyyymmdd") + "-" + $_.Name }
