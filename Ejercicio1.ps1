@@ -1,2 +1,2 @@
-#1024*1024 --> 1 MG
-Get-ChildItem | where-object { ($_.length / 1MB) -lt 1} | Sort-Object length
+#Directorio actual -> listar -> filtrar -> ordenar por longitud
+Get-Location | Get-ChildItem | where-object { ($_.length / 1KB) -gt 1} | Sort-Object length
